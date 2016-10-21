@@ -48,7 +48,7 @@ class ListResultsSubscriber implements EventSubscriberInterface
 
     public function onResults(ListResultEvent $event)
     {
-        $query = $event->getQueryBuilder();
+        $query = $event->getQuery();
         if ($query instanceof Query) {
 //            $finder = $this->container->get('fos_elastica.finder.app.products');
 //            $results = $finder->find($query);

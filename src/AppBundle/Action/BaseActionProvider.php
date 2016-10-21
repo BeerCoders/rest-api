@@ -37,18 +37,18 @@ class BaseActionProvider extends BaseProvider
                     'page' => '\d+',
                     'limit' => '\d+',
                 ],
-                'checkAccess' => [
-                    'attributes' => ['ROLE_USER']
-                ],
+//                'checkAccess' => [
+//                    'attributes' => ['ROLE_USER']
+//                ],
             ])
             ->addAction(AddAction::class, [
                 'rest_route' => true,
                 'requirements' => [
                     '_format' => 'json|xml'
                 ],
-                'checkAccess' => [
-                    'attributes' => ['ROLE_USER']
-                ],
+//                'checkAccess' => [
+//                    'attributes' => ['ROLE_USER']
+//                ],
             ])
             ->addAction(EditAction::class, [
                 'rest_route' => true,
@@ -56,9 +56,9 @@ class BaseActionProvider extends BaseProvider
                     'id' => '\d+',
                     '_format' => 'json|xml'
                 ],
-                'checkAccess' => [
-                    'attributes' => ['ROLE_USER']
-                ],
+//                'checkAccess' => [
+//                    'attributes' => ['ROLE_USER']
+//                ],
             ])
             ->addAction(DeleteAction::class, [
                 'rest_route' => true,
@@ -66,9 +66,9 @@ class BaseActionProvider extends BaseProvider
                     'id' => '\d+',
                     '_format' => 'json|xml'
                 ],
-                'checkAccess' => [
-                    'attributes' => ['ROLE_USER']
-                ],
+//                'checkAccess' => [
+//                    'attributes' => ['ROLE_USER']
+//                ],
             ])
             ->addAction(ShowAction::class, [
                 'rest_route' => true,
@@ -76,9 +76,9 @@ class BaseActionProvider extends BaseProvider
                     'id' => '\d+',
                     '_format' => 'json|xml'
                 ],
-                'checkAccess' => [
-                    'attributes' => ['ROLE_USER']
-                ],
+//                'checkAccess' => [
+//                    'attributes' => ['ROLE_USER']
+//                ],
             ]);
 
         return $this->actions;
